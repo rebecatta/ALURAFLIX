@@ -1,30 +1,44 @@
 body {
-background-color: black;   
-color: rgba(241, 240, 241, 0.292);
-font-family:'Trebuchet MS','Comic Sans MS', cursive;
-margin: 0;                 
+    background-color: black;
+    color: rgba(241, 240, 241, 0.8); /* Ajuste a opacidade */
+    font-family: 'Trebuchet MS', 'Comic Sans MS', cursive;
+    margin: 0;
+    padding: 20px; /* Padding para o corpo */
 }
 
 header {
-font-size: 60px;   
-padding: 6px;                
-text-align: center;
+    font-size: 40px; /* Ajuste o tamanho */
+    padding: 6px;
+    text-align: center;
 }
 
 h1 {
-font-size: 30px;
-border-bottom: double 5px rgb(250, 248, 250); 
-text-align: center;
+    font-size: 30px;
+    border-bottom: double 5px rgb(250, 248, 250);
+    text-align: center;
+    padding-bottom: 10px; /* Espaçamento abaixo do título */
+    color: white; /* Garantir o título em branco */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Sombra no título */
 }
 
 p {
-font-size: 20px;
-text-align: center;
+    font-size: 20px;
+    text-align: center;
+    line-height: 1.5; /* Espaçamento entre as linhas */
+    color: rgba(241, 240, 241, 0.8); /* Ajustando a cor do texto */
 }
 
 iframe, video {
-display: block;
-margin: 0 auto;      
-width: 80%;
-max-width: 700px;  
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+    max-width: 700px;
 }
+
+@media (max-width: 768px) {
+    iframe, video {
+        width: 100%; /* Ajustando a largura em telas menores */
+        max-width: 100%; /* Remover o limite máximo */
+    }
+}
+
